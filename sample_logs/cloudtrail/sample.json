@@ -1,0 +1,176 @@
+{
+  "Records": [
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:14:01Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "Mozilla/5.0",
+      "errorCode": "Failed authentication",
+      "errorMessage": "Failed authentication",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Failure"},
+      "eventType": "AwsConsoleSignIn",
+      "requestID": "req-001"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:14:23Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "Mozilla/5.0",
+      "errorCode": "Failed authentication",
+      "errorMessage": "Failed authentication",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Failure"},
+      "eventType": "AwsConsoleSignIn",
+      "requestID": "req-002"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:14:45Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "Mozilla/5.0",
+      "errorCode": "Failed authentication",
+      "errorMessage": "Failed authentication",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Failure"},
+      "eventType": "AwsConsoleSignIn",
+      "requestID": "req-003"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:15:02Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "Mozilla/5.0",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "eventType": "AwsConsoleSignIn",
+      "requestID": "req-004"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:15:18Z",
+      "eventSource": "signin.amazonaws.com",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "Mozilla/5.0",
+      "requestParameters": null,
+      "responseElements": {"ConsoleLogin": "Success"},
+      "eventType": "AwsConsoleSignIn",
+      "requestID": "req-005"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:15:44Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachRolePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "aws-cli/2.0",
+      "requestParameters": {
+        "roleName": "AdminRole",
+        "policyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+      },
+      "eventType": "AwsApiCall",
+      "requestID": "req-006"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:16:05Z",
+      "eventSource": "iam.amazonaws.com",
+      "eventName": "AttachRolePolicy",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "aws-cli/2.0",
+      "requestParameters": {
+        "roleName": "EC2Role",
+        "policyArn": "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
+      },
+      "eventType": "AwsApiCall",
+      "requestID": "req-007"
+    },
+    {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAEXAMPLEID",
+        "arn": "arn:aws:iam::123456789012:user/jsmith",
+        "accountId": "123456789012",
+        "userName": "jsmith"
+      },
+      "eventTime": "2024-03-15T02:16:30Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "sourceIPAddress": "203.0.113.42",
+      "userAgent": "aws-cli/2.0",
+      "requestParameters": {
+        "bucketName": "sensitive-data-prod",
+        "key": "customer_records_2024.csv"
+      },
+      "eventType": "AwsApiCall",
+      "requestID": "req-008"
+    }
+  ]
+}

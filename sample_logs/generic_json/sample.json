@@ -1,0 +1,10 @@
+{"time": "2024-03-15T02:14:00Z", "username": "alice", "action": "login", "resource": "portal.example.com", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:14:30Z", "username": "alice", "action": "download", "resource": "s3://reports-bucket/q1_financials.xlsx", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:14:45Z", "username": "alice", "action": "download", "resource": "s3://reports-bucket/q2_financials.xlsx", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:15:00Z", "username": "alice", "action": "download", "resource": "s3://reports-bucket/q3_financials.xlsx", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:15:15Z", "username": "alice", "action": "download", "resource": "s3://reports-bucket/q4_financials.xlsx", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:15:30Z", "username": "alice", "action": "export", "resource": "crm://customers/all", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:15:45Z", "username": "alice", "action": "export", "resource": "hrms://employees/all", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T02:16:00Z", "username": "alice", "action": "upload", "resource": "dropbox://shared/data_dump.zip", "result": "success", "ip": "10.0.1.5", "department": "engineering"}
+{"time": "2024-03-15T01:00:00Z", "username": "bob", "action": "login", "resource": "portal.example.com", "result": "success", "ip": "192.168.1.10", "department": "finance"}
+{"time": "2024-03-15T01:05:00Z", "username": "bob", "action": "view", "resource": "dashboard://finance/summary", "result": "success", "ip": "192.168.1.10", "department": "finance"}

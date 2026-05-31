@@ -1,0 +1,15 @@
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:01 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:09 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:17 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:25 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:33 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:41 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:49 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|SSH_BRUTE|SSH Brute Force Attempt|7|rt=Mar 15 2024 02:14:57 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=blocked
+CEF:0|ExampleIDS|NetShield|4.1|AUTH_SUCCESS_AFTER_BRUTE|Successful Authentication After Brute Force|9|rt=Mar 15 2024 02:15:05 src=203.0.113.42 dst=10.0.0.10 dpt=22 suser=admin act=allowed
+CEF:0|ExampleIDS|NetShield|4.1|AUTH_SUCCESS_AFTER_BRUTE|Successful Authentication After Brute Force|9|rt=Mar 15 2024 02:15:10 src=203.0.113.42 dst=10.0.0.20 dpt=22 suser=admin act=allowed
+CEF:0|ExampleIDS|NetShield|4.1|AUTH_SUCCESS_AFTER_BRUTE|Successful Authentication After Brute Force|9|rt=Mar 15 2024 02:15:15 src=203.0.113.42 dst=10.0.0.30 dpt=22 suser=admin act=allowed
+CEF:0|ExampleIDS|NetShield|4.1|AUTH_SUCCESS_AFTER_BRUTE|Successful Authentication After Brute Force|9|rt=Mar 15 2024 02:15:20 src=203.0.113.42 dst=10.0.0.40 dpt=22 suser=admin act=allowed
+CEF:0|ExampleIDS|NetShield|4.1|LATERAL_MOVE|Lateral Movement Detected|8|rt=Mar 15 2024 02:15:30 src=10.0.0.10 dst=10.0.0.20 dpt=445 suser=admin act=allowed cs1=smb cs1Label=protocol
+CEF:0|ExampleIDS|NetShield|4.1|LATERAL_MOVE|Lateral Movement Detected|8|rt=Mar 15 2024 02:15:35 src=10.0.0.10 dst=10.0.0.30 dpt=445 suser=admin act=allowed cs1=smb cs1Label=protocol
+CEF:0|ExampleIDS|NetShield|4.1|LATERAL_MOVE|Lateral Movement Detected|8|rt=Mar 15 2024 02:15:40 src=10.0.0.10 dst=10.0.0.50 dpt=3389 suser=admin act=allowed cs1=rdp cs1Label=protocol

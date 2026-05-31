@@ -1,0 +1,72 @@
+# Incident Report — {{ severity }} — {{ generated_at[:10] }}
+
+**Report ID:** {{ report_id }}
+**Generated:** {{ generated_at }}
+**Overall Severity:** {{ severity }}
+
+---
+
+## Executive Summary
+
+{{ summary }}
+
+---
+
+## Threat Clusters
+
+{% for cluster in clusters %}
+### Cluster {{ cluster.cluster_id }} — Score {{ "%.1f"|format(cluster.suspicion_score) }}/10
+
+| Field | Value |
+|-------|-------|
+| Primary Actor | `{{ cluster.primary_actor }}` |
+| Primary Target | `{{ cluster.primary_target }}` |
+| Events | {{ cluster.events|length }} |
+| Time Span | {{ "%.0f"|format(cluster.time_span_seconds) }}s |
+| Tags | {{ cluster.tags|join(", ") or "—" }} |
+| MITRE Hints | {{ cluster.mitre_hints|join(", ") or "—" }} |
+
+#### Events
+
+| Timestamp | Actor | Action | Target | Severity |
+|-----------|-------|--------|--------|----------|
+{% for e in cluster.events[:20] -%}
+| {{ e.timestamp[:19] if e.timestamp else "—" }} | {{ e.actor[:30] }} | {{ e.action[:25] }} | {{ e.target[:30] }} | {{ e.severity }} |
+{% endfor %}
+{% if cluster.events|length > 20 %}
+_... and {{ cluster.events|length - 20 }} more events_
+{% endif %}
+
+{% endfor %}
+
+---
+
+## MITRE ATT&CK Mapping
+
+{% if mitre_techniques %}
+{% for t in mitre_techniques %}
+- **{{ t.id }}** — [{{ t.name }}]({{ t.url }})
+{% endfor %}
+{% else %}
+_No MITRE techniques identified._
+{% endif %}
+
+---
+
+## Remediation Actions
+
+{% if remediation_actions %}
+{% for action in remediation_actions %}
+- {{ action }}
+{% endfor %}
+{% else %}
+_No specific remediation actions identified._
+{% endif %}
+
+---
+
+## Raw Analysis
+
+```
+{{ raw_analysis }}
+```

@@ -1,0 +1,10 @@
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|AuthFailure	devTime=Mar 15 2024 02:14:05	usrName=jsmith	src=203.0.113.42	dst=10.0.0.50	cat=authentication	sev=high	action=failed_login
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|AuthFailure	devTime=Mar 15 2024 02:14:18	usrName=jsmith	src=203.0.113.42	dst=10.0.0.50	cat=authentication	sev=high	action=failed_login
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|AuthFailure	devTime=Mar 15 2024 02:14:31	usrName=jsmith	src=203.0.113.42	dst=10.0.0.50	cat=authentication	sev=high	action=failed_login
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|AuthSuccess	devTime=Mar 15 2024 02:14:55	usrName=jsmith	src=203.0.113.42	dst=10.0.0.50	cat=authentication	sev=low	action=successful_login
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|PrivilegeChange	devTime=Mar 15 2024 02:15:10	usrName=jsmith	src=10.0.0.50	dst=10.0.0.1	cat=privilege	sev=critical	action=sudo_escalation	newRole=root
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|PrivilegeChange	devTime=Mar 15 2024 02:15:22	usrName=jsmith	src=10.0.0.50	dst=10.0.0.1	cat=privilege	sev=critical	action=group_add	newRole=wheel
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|FileAccess	devTime=Mar 15 2024 02:15:35	usrName=jsmith	src=10.0.0.50	dst=10.0.0.1	cat=file	sev=high	action=read	resource=/etc/shadow
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|NetworkConn	devTime=Mar 15 2024 02:15:50	usrName=jsmith	src=10.0.0.50	dst=203.0.113.99	cat=network	sev=high	action=outbound_connection	resource=http://203.0.113.99/exfil
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|AuthSuccess	devTime=Mar 15 2024 01:00:00	usrName=deploy	src=10.0.0.5	dst=10.0.0.10	cat=authentication	sev=low	action=successful_login
+LEEF:1.0|ExampleSIEM|AuthGuard|2.0|FileAccess	devTime=Mar 15 2024 01:05:00	usrName=deploy	src=10.0.0.5	dst=10.0.0.10	cat=file	sev=low	action=write	resource=/var/www/html/index.html

